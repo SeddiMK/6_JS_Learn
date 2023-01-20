@@ -3,10 +3,9 @@ import { isMobile } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 //=============================================
-function myFn() {
-	let a = 3
-	let b = 3
-	return a + b
+const myFu = (value, c = 1) => {
+	return value * c
 }
-myFn()
-console.log(myFn());
+console.log(myFu(3, 9));
+var str = 'fgfggg';
+console.log(str[0]);

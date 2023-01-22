@@ -22,6 +22,27 @@
             }));
         }
     }), 0);
+    const newPost = (post, addedAt = Date()) => {
+        const addDate = {
+            ...post,
+            addedAt
+        };
+        return addDate;
+    };
+    const firstPost = {
+        id: 1,
+        author: "Max"
+    };
+    newPost(firstPost);
+    const fnWithError = () => {
+        throw new Error("Some error");
+    };
+    try {
+        fnWithError();
+    } catch (error) {}
+    const myArr = [ 1, 2, 3 ];
+    const newArr = myArr.map((e => 5 * e));
+    console.log(newArr);
     window["FLS"] = true;
     isWebp();
 })();

@@ -78,9 +78,9 @@ const myObject = {
 Object.values(myObject).forEach(key => {
 	console.log(key, myObject[key]);
 })
-console.log(Object.keys(myObject));
-console.log(Object.values({
-	x: 10000,
-	y: true,
-	z: 'abcasdasda'
-})); 
+//console.log(Object.keys(myObject));
+//console.log(Object.values({
+//	x: 10000,
+//	y: true,
+//	z: 'abcasdasda'
+//})); 
